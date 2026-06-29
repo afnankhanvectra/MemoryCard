@@ -1,0 +1,128 @@
+# Resolve react_native_pods.rb with node to allow for hoisting
+require Pod::Executable.execute_command('node', ['-p',
+  'require.resolve(
+    "react-native/scripts/react_native_pods.rb",
+    {paths: [process.argv[1]]},
+  )', __dir__]).strip
+
+platform :ios, min_ios_version_supported
+prepare_react_native_project!
+
+linkage = ENV['USE_FRAMEWORKS']
+if linkage != nil
+  Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
+  use_frameworks! :linkage => linkage.to_sym
+end
+
+target 'MemoryCardApp' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+
+  post_install do |installer|
+    # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
+    react_native_post_install(
+      installer,
+      config[:reactNativePath],
+      :mac_catalyst_enabled => false,
+      # :ccache_enabled => true
+    )
+
+    installer.pods_project.build_configurations.each do |build_config|
+      build_config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+    end
+
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |build_config|
+        build_config.build_settings['ENABLE_USER_SCRIPT_SANDBOXING'] = 'NO'
+        build_config.build_settings['CLANG_CXX_LANGUAGE_STANDARD'] = 'gnu++20'
+        build_config.build_settings['CLANG_CXX_LIBRARY'] = 'libc++'
+
+        defs = build_config.build_settings['GCC_PREPROCESSOR_DEFINITIONS']
+        defs = ['$(inherited)'] if defs.nil?
+        defs = defs.split(/\s+/) if defs.is_a?(String)
+        defs = Array(defs)
+        defs << '$(inherited)' unless defs.include?('$(inherited)')
+        defs << 'FMT_USE_CONSTEXPR=0' unless defs.include?('FMT_USE_CONSTEXPR=0')
+        defs << 'FMT_USE_CONSTEVAL=0' unless defs.include?('FMT_USE_CONSTEVAL=0')
+        build_config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = defs
+
+        cxxflags = build_config.build_settings['OTHER_CPLUSPLUSFLAGS']
+        cxxflags = ['$(inherited)'] if cxxflags.nil?
+        cxxflags = cxxflags.split(/\s+/) if cxxflags.is_a?(String)
+        cxxflags = Array(cxxflags)
+        cxxflags << '-DFMT_USE_CONSTEXPR=0' unless cxxflags.include?('-DFMT_USE_CONSTEXPR=0')
+        cxxflags << '-DFMT_USE_CONSTEVAL=0' unless cxxflags.include?('-DFMT_USE_CONSTEVAL=0')
+        build_config.build_settings['OTHER_CPLUSPLUSFLAGS'] = cxxflags
+      end
+    end
+
+    # RN's third-party podspecs declare privacy resource bundles, but the files
+    # live beside the podspecs instead of inside the downloaded pods.
+    require 'fileutils'
+    {
+      'boost-boost_privacy' => 'boost',
+      'glog-glog_privacy' => 'glog',
+      'RCT-Folly-RCT-Folly_privacy' => 'RCT-Folly',
+    }.each do |target_name, pod_name|
+      source = File.join(__dir__, '..', 'node_modules', 'react-native', 'third-party-podspecs', pod_name, 'PrivacyInfo.xcprivacy')
+      destination = File.join(__dir__, 'Pods', pod_name, pod_name, 'PrivacyInfo.xcprivacy')
+      next unless File.file?(source)
+
+      FileUtils.mkdir_p(File.dirname(destination))
+      FileUtils.cp(source, destination)
+
+      privacy_target = installer.pods_project.targets.find { |target| target.name == target_name }
+      next unless privacy_target&.resources_build_phase
+
+      file_reference_path = File.join(pod_name, pod_name, 'PrivacyInfo.xcprivacy')
+      file_reference = installer.pods_project.files.find { |file| file.path == file_reference_path } ||
+        installer.pods_project.new_file(file_reference_path)
+
+      resources = privacy_target.resources_build_phase.files_references
+      privacy_target.resources_build_phase.add_file_reference(file_reference) unless resources.include?(file_reference)
+    end
+
+    fmt_patch = File.join(__dir__, 'patches', 'fmt-base-xcode26.patch')
+    fmt_base = File.join(__dir__, 'Pods', 'fmt', 'include', 'fmt', 'base.h')
+    if File.file?(fmt_patch) && File.file?(fmt_base) && !File.read(fmt_base).include?('FMT_XCODE26_FMT_PATCH')
+      begin
+        File.chmod(0644, fmt_base)
+      rescue StandardError
+      end
+
+      ok = system(
+        {'LANG' => 'C', 'LC_ALL' => 'C'},
+        'patch',
+        '-p0',
+        '-i',
+        fmt_patch,
+        '-d',
+        __dir__,
+      )
+      unless ok
+        Pod::UI.warn("[Podfile] fmt base.h patch failed. Patch: #{fmt_patch}")
+      end
+    end
+
+    # react-native-sound uses AVAudioSession/AVAudioPlayer but its podspec does
+    # not declare AVFoundation, so add the framework to the app pod xcconfigs.
+    Dir.glob(File.join(__dir__, 'Pods', 'Target Support Files', 'Pods-MemoryCardApp', 'Pods-MemoryCardApp.*.xcconfig')).each do |xcconfig|
+      contents = File.read(xcconfig)
+      next if contents.include?('-framework "AVFoundation"')
+
+      File.write(
+        xcconfig,
+        contents.sub(
+          /^OTHER_LDFLAGS = (.*)$/,
+          'OTHER_LDFLAGS = \1 -framework "AVFoundation"',
+        ),
+      )
+    end
+
+  end
+end
