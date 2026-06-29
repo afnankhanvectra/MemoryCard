@@ -35,7 +35,7 @@ local.properties
 
 # node.js
 #
-# node_modules/
+node_modules/
 npm-debug.log
 yarn-error.log
 yarn.lock
@@ -63,7 +63,7 @@ index.android.bundle
 *.jsbundle
 
 # CocoaPods
-**/Pods/
+# **/Pods/
 /ios/Podfile.lock
 android/app/release/app.aab
 android/app/release/*
@@ -79,7 +79,7 @@ amplify/backend/amplify-meta.json
 amplify/backend/.temp
 build/
 dist/
-# node_modules/
+node_modules/
 awsconfiguration.json
 amplifyconfiguration.json
 amplifyconfiguration.dart
