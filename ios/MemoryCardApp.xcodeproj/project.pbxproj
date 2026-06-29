@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C80B921A6F3F58F76C31292 /* libPods-MemoryCardApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-MemoryCardApp.a */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		4D0000010000000000000001 /* card_click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0000010000000000000101 /* card_click.wav */; };
+		4D0000010000000000000002 /* failure.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0000010000000000000102 /* failure.wav */; };
+		4D0000010000000000000003 /* kids_background.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0000010000000000000103 /* kids_background.wav */; };
+		4D0000010000000000000004 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D0000010000000000000104 /* success.wav */; };
+		4DB10146F44B8CC37B7107FA /* letter_b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF143D1576D751173EE6861 /* letter_b.wav */; };
+		4DB1029461AA743A45681639 /* vehicle_ship.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF105F7A53A5A8769342318 /* vehicle_ship.wav */; };
+		4DB1029AEF6A63954A893766 /* animal_cow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1ABF17F90F356B565BF77 /* animal_cow.wav */; };
+		4DB1041FFFB767AB22A0FB68 /* animal_chick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF13D4CD1AF1CCC4DFE2137 /* animal_chick.wav */; };
+		4DB10D6418339835DDAB8725 /* game_over.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1B45F94E5B98F23E99C4D /* game_over.wav */; };
+		4DB117B128C678137D6998E4 /* veg_pepper.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1702B6FC003F7A0E6F42B /* veg_pepper.wav */; };
+		4DB11A1BC9A9925D509983B9 /* fruit_cherries.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF17964AA4A6D8051673145 /* fruit_cherries.wav */; };
+		4DB11E6B7A8517D4AEBB3872 /* fruit_banana.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1E916B4345B67FC412BF9 /* fruit_banana.wav */; };
+		4DB120811C347A08BB593A83 /* number_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF13CA3EDE3F2C76E0A98CB /* number_8.wav */; };
+		4DB1223A517771F290573581 /* letter_c.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF19793BD748BA800F4D4B3 /* letter_c.wav */; };
+		4DB12389D78EC8B5D07631F6 /* veg_onion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF14FE13374CB5D7C61DEDA /* veg_onion.wav */; };
+		4DB126527B323E5F7A161DAF /* number_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF19D51EA6B829E06559A42 /* number_3.wav */; };
+		4DB1292BEA8C16380D5A74CB /* animal_lion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1CBBC7C9828528531CBB8 /* animal_lion.wav */; };
+		4DB132CDF9D5003AC10252C9 /* animal_elephant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF11D505A05C3995EFC0DC9 /* animal_elephant.wav */; };
+		4DB1354619D7069CD5629358 /* vehicle_car.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF16C99913BE0651F08789E /* vehicle_car.wav */; };
+		4DB1368AC6E4326C15FD1B77 /* fruit_pear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1332D5933CAE9BA8B9B5F /* fruit_pear.wav */; };
+		4DB13AB32E53752BFE37FDAC /* vehicle_airplane.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF12BD08703277859874EC6 /* vehicle_airplane.wav */; };
+		4DB14231EE24391006C2255D /* animal_frog.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1EFFEAF803D71C6738D9D /* animal_frog.wav */; };
+		4DB143BC2370E7D508186C79 /* veg_potato.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1451A4783F53B2DA27147 /* veg_potato.wav */; };
+		4DB143FC307D3DDDA1E1579F /* animal_puppy.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1D115C1F550E359BD7CE9 /* animal_puppy.wav */; };
+		4DB14623A5C3BF1C81059DEE /* letter_h.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1889AFB251E2EC2210412 /* letter_h.wav */; };
+		4DB14E5426FA4081333E40D9 /* number_9.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF122AE2A84882386C5E316 /* number_9.wav */; };
+		4DB1580FCD09A24C31B34F30 /* letter_i.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1B9A0743393FCA7DB0E68 /* letter_i.wav */; };
+		4DB15912D4C390AB1C081B8F /* vehicle_train.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1521B0D0A4D7CAF8DFF42 /* vehicle_train.wav */; };
+		4DB15FADBED519B280A9A88F /* fruit_pineapple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF12D4792A8DD47B967EA22 /* fruit_pineapple.wav */; };
+		4DB162786677FA743ECD5C13 /* fruit_apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF11CCFA55ED928969A46EA /* fruit_apple.wav */; };
+		4DB16351DC408132E3CB4BB6 /* win_fanfare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF10CF2E1C8C6EED66F0810 /* win_fanfare.wav */; };
+		4DB163EE546EAC10B721FDCB /* veg_tomato.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1AF609D382AF028FB97CF /* veg_tomato.wav */; };
+		4DB16EE6C48A94C04C37ADF1 /* veg_carrot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1480082928B1EC9889111 /* veg_carrot.wav */; };
+		4DB16FB6AA2C792210565E5E /* fruit_mango.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF10139701B6853D295C24F /* fruit_mango.wav */; };
+		4DB17069C7FB8346261BA143 /* vehicle_bicycle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF152E84444CDBAB6B43BF6 /* vehicle_bicycle.wav */; };
+		4DB175BD2D4265983ADC2C6E /* animal_kitten.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1E18CCBF40EFBF16807F5 /* animal_kitten.wav */; };
+		4DB17648EB02F523C55D5EA3 /* number_6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF128C58117CEDCB1F5FCFA /* number_6.wav */; };
+		4DB1764C6240A278716B4369 /* veg_cucumber.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF13AC89845A701AF1A21DC /* veg_cucumber.wav */; };
+		4DB17DD0899FDCFDEB555B02 /* fruit_grapes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF18DBA0B061BF0D490A54E /* fruit_grapes.wav */; };
+		4DB17DD9ECAFCAE7445B58BC /* letter_f.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1A75112F9B91643805D1C /* letter_f.wav */; };
+		4DB17EB5FDB5F107F335CAD8 /* veg_broccoli.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1776204227A524179E702 /* veg_broccoli.wav */; };
+		4DB18503D0A68AB7A146A296 /* vehicle_motorcycle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1DF1FC484AE689A985FEC /* vehicle_motorcycle.wav */; };
+		4DB1858D5A2C4619B6F9A747 /* vehicle_bus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1661623448706AAAF2CFE /* vehicle_bus.wav */; };
+		4DB18786527AB186B6F8B627 /* fruit_strawberry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF10F0097C11525A54DD988 /* fruit_strawberry.wav */; };
+		4DB1886F95BFCF7DE285131A /* number_5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1E8B4DAD20473ED78E325 /* number_5.wav */; };
+		4DB1908D962183A6E0A6E0CE /* letter_e.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF130777FA1802A237524A0 /* letter_e.wav */; };
+		4DB193087AEEE02744D510B2 /* letter_j.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF132B95DE308E13AF3C527 /* letter_j.wav */; };
+		4DB193372C385AD7D8AEA0B5 /* number_7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF11B8BC41A8EF120E8BFE4 /* number_7.wav */; };
+		4DB19B2B13873081E8E15B70 /* letter_d.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1DE2AF5D02B129CC907D2 /* letter_d.wav */; };
+		4DB19C120A377680F865CD7B /* fruit_orange.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1C7C3D07E7D92B22D2E36 /* fruit_orange.wav */; };
+		4DB19D56EE9CDC0E5096C654 /* animal_pig.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1BB50F79A0471D2113606 /* animal_pig.wav */; };
+		4DB19EBEFFF13DE71F2ADBF7 /* vehicle_helicopter.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1444D590DA0D273D30B6A /* vehicle_helicopter.wav */; };
+		4DB1AC8C89F7E4816F2509DB /* letter_g.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1A0F14AD6C3AB41B2994A /* letter_g.wav */; };
+		4DB1B2BC467031F157797C37 /* number_10.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1C1EACF5407B5D4995DA9 /* number_10.wav */; };
+		4DB1B2DF393A5E7E37F88B6E /* animal_monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF136A2FDBDE55CAC1552C5 /* animal_monkey.wav */; };
+		4DB1B6CA73F13CF604172C6A /* number_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1F1D9275E3F121F29DD42 /* number_2.wav */; };
+		4DB1B9167AED452534DBD8D7 /* fruit_watermelon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1BC0DF586D2B0CA3990F2 /* fruit_watermelon.wav */; };
+		4DB1B932A7A31AE44D2F61A1 /* animal_duck.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF199DDCCC51F85804CF308 /* animal_duck.wav */; };
+		4DB1BAD07346C75D1E63A7CC /* veg_eggplant.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1622C15782CB0842B4611 /* veg_eggplant.wav */; };
+		4DB1BFA50C109365FBD546B3 /* letter_a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1960D07ACD50F407869A6 /* letter_a.wav */; };
+		4DB1BFF8DA2BF71768D6D450 /* veg_corn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF16AC0BB33F806C6973FAE /* veg_corn.wav */; };
+		4DB1C7E4F28B2AC4E9192202 /* veg_mushroom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1D2DFEA77C54E4017E490 /* veg_mushroom.wav */; };
+		4DB1EA616C194F80A455790D /* vehicle_rocket.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1CC8119CF5987FE8DF1C6 /* vehicle_rocket.wav */; };
+		4DB1EAB11DD733E8F76B3746 /* number_4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF1A08DD887F7ED4815F2CE /* number_4.wav */; };
+		4DB1F1A92A67F047E8DE736C /* number_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF10DBFC13B45CDD7D5EEE8 /* number_1.wav */; };
+		4DB1FB2CF80183C12D486E61 /* vehicle_truck.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4DF179DDABE536FE260FE227 /* vehicle_truck.wav */; };
+		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D86A9C0BD089AA196F0EF372 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13B07F961A680F5B00A75B9A /* MemoryCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MemoryCardApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MemoryCardApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = MemoryCardApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-MemoryCardApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryCardApp.debug.xcconfig"; path = "Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D0000010000000000000101 /* card_click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = card_click.wav; path = MemoryCardApp/Sounds/card_click.wav; sourceTree = "<group>"; };
+		4D0000010000000000000102 /* failure.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = failure.wav; path = MemoryCardApp/Sounds/failure.wav; sourceTree = "<group>"; };
+		4D0000010000000000000103 /* kids_background.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kids_background.wav; path = MemoryCardApp/Sounds/kids_background.wav; sourceTree = "<group>"; };
+		4D0000010000000000000104 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = success.wav; path = MemoryCardApp/Sounds/success.wav; sourceTree = "<group>"; };
+		4DF10139701B6853D295C24F /* fruit_mango.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_mango.wav; path = MemoryCardApp/Sounds/fruit_mango.wav; sourceTree = "<group>"; };
+		4DF105F7A53A5A8769342318 /* vehicle_ship.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_ship.wav; path = MemoryCardApp/Sounds/vehicle_ship.wav; sourceTree = "<group>"; };
+		4DF10CF2E1C8C6EED66F0810 /* win_fanfare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win_fanfare.wav; path = MemoryCardApp/Sounds/win_fanfare.wav; sourceTree = "<group>"; };
+		4DF10DBFC13B45CDD7D5EEE8 /* number_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_1.wav; path = MemoryCardApp/Sounds/number_1.wav; sourceTree = "<group>"; };
+		4DF10F0097C11525A54DD988 /* fruit_strawberry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_strawberry.wav; path = MemoryCardApp/Sounds/fruit_strawberry.wav; sourceTree = "<group>"; };
+		4DF11B8BC41A8EF120E8BFE4 /* number_7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_7.wav; path = MemoryCardApp/Sounds/number_7.wav; sourceTree = "<group>"; };
+		4DF11CCFA55ED928969A46EA /* fruit_apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_apple.wav; path = MemoryCardApp/Sounds/fruit_apple.wav; sourceTree = "<group>"; };
+		4DF11D505A05C3995EFC0DC9 /* animal_elephant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_elephant.wav; path = MemoryCardApp/Sounds/animal_elephant.wav; sourceTree = "<group>"; };
+		4DF122AE2A84882386C5E316 /* number_9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_9.wav; path = MemoryCardApp/Sounds/number_9.wav; sourceTree = "<group>"; };
+		4DF128C58117CEDCB1F5FCFA /* number_6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_6.wav; path = MemoryCardApp/Sounds/number_6.wav; sourceTree = "<group>"; };
+		4DF12BD08703277859874EC6 /* vehicle_airplane.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_airplane.wav; path = MemoryCardApp/Sounds/vehicle_airplane.wav; sourceTree = "<group>"; };
+		4DF12D4792A8DD47B967EA22 /* fruit_pineapple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_pineapple.wav; path = MemoryCardApp/Sounds/fruit_pineapple.wav; sourceTree = "<group>"; };
+		4DF130777FA1802A237524A0 /* letter_e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_e.wav; path = MemoryCardApp/Sounds/letter_e.wav; sourceTree = "<group>"; };
+		4DF132B95DE308E13AF3C527 /* letter_j.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_j.wav; path = MemoryCardApp/Sounds/letter_j.wav; sourceTree = "<group>"; };
+		4DF1332D5933CAE9BA8B9B5F /* fruit_pear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_pear.wav; path = MemoryCardApp/Sounds/fruit_pear.wav; sourceTree = "<group>"; };
+		4DF136A2FDBDE55CAC1552C5 /* animal_monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_monkey.wav; path = MemoryCardApp/Sounds/animal_monkey.wav; sourceTree = "<group>"; };
+		4DF13AC89845A701AF1A21DC /* veg_cucumber.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_cucumber.wav; path = MemoryCardApp/Sounds/veg_cucumber.wav; sourceTree = "<group>"; };
+		4DF13CA3EDE3F2C76E0A98CB /* number_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_8.wav; path = MemoryCardApp/Sounds/number_8.wav; sourceTree = "<group>"; };
+		4DF13D4CD1AF1CCC4DFE2137 /* animal_chick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_chick.wav; path = MemoryCardApp/Sounds/animal_chick.wav; sourceTree = "<group>"; };
+		4DF143D1576D751173EE6861 /* letter_b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_b.wav; path = MemoryCardApp/Sounds/letter_b.wav; sourceTree = "<group>"; };
+		4DF1444D590DA0D273D30B6A /* vehicle_helicopter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_helicopter.wav; path = MemoryCardApp/Sounds/vehicle_helicopter.wav; sourceTree = "<group>"; };
+		4DF1451A4783F53B2DA27147 /* veg_potato.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_potato.wav; path = MemoryCardApp/Sounds/veg_potato.wav; sourceTree = "<group>"; };
+		4DF1480082928B1EC9889111 /* veg_carrot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_carrot.wav; path = MemoryCardApp/Sounds/veg_carrot.wav; sourceTree = "<group>"; };
+		4DF14FE13374CB5D7C61DEDA /* veg_onion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_onion.wav; path = MemoryCardApp/Sounds/veg_onion.wav; sourceTree = "<group>"; };
+		4DF1521B0D0A4D7CAF8DFF42 /* vehicle_train.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_train.wav; path = MemoryCardApp/Sounds/vehicle_train.wav; sourceTree = "<group>"; };
+		4DF152E84444CDBAB6B43BF6 /* vehicle_bicycle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_bicycle.wav; path = MemoryCardApp/Sounds/vehicle_bicycle.wav; sourceTree = "<group>"; };
+		4DF1622C15782CB0842B4611 /* veg_eggplant.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_eggplant.wav; path = MemoryCardApp/Sounds/veg_eggplant.wav; sourceTree = "<group>"; };
+		4DF1661623448706AAAF2CFE /* vehicle_bus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_bus.wav; path = MemoryCardApp/Sounds/vehicle_bus.wav; sourceTree = "<group>"; };
+		4DF16AC0BB33F806C6973FAE /* veg_corn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_corn.wav; path = MemoryCardApp/Sounds/veg_corn.wav; sourceTree = "<group>"; };
+		4DF16C99913BE0651F08789E /* vehicle_car.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_car.wav; path = MemoryCardApp/Sounds/vehicle_car.wav; sourceTree = "<group>"; };
+		4DF1702B6FC003F7A0E6F42B /* veg_pepper.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_pepper.wav; path = MemoryCardApp/Sounds/veg_pepper.wav; sourceTree = "<group>"; };
+		4DF1776204227A524179E702 /* veg_broccoli.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_broccoli.wav; path = MemoryCardApp/Sounds/veg_broccoli.wav; sourceTree = "<group>"; };
+		4DF17964AA4A6D8051673145 /* fruit_cherries.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_cherries.wav; path = MemoryCardApp/Sounds/fruit_cherries.wav; sourceTree = "<group>"; };
+		4DF179DDABE536FE260FE227 /* vehicle_truck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_truck.wav; path = MemoryCardApp/Sounds/vehicle_truck.wav; sourceTree = "<group>"; };
+		4DF1889AFB251E2EC2210412 /* letter_h.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_h.wav; path = MemoryCardApp/Sounds/letter_h.wav; sourceTree = "<group>"; };
+		4DF18DBA0B061BF0D490A54E /* fruit_grapes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_grapes.wav; path = MemoryCardApp/Sounds/fruit_grapes.wav; sourceTree = "<group>"; };
+		4DF1960D07ACD50F407869A6 /* letter_a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_a.wav; path = MemoryCardApp/Sounds/letter_a.wav; sourceTree = "<group>"; };
+		4DF19793BD748BA800F4D4B3 /* letter_c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_c.wav; path = MemoryCardApp/Sounds/letter_c.wav; sourceTree = "<group>"; };
+		4DF199DDCCC51F85804CF308 /* animal_duck.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_duck.wav; path = MemoryCardApp/Sounds/animal_duck.wav; sourceTree = "<group>"; };
+		4DF19D51EA6B829E06559A42 /* number_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_3.wav; path = MemoryCardApp/Sounds/number_3.wav; sourceTree = "<group>"; };
+		4DF1A08DD887F7ED4815F2CE /* number_4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_4.wav; path = MemoryCardApp/Sounds/number_4.wav; sourceTree = "<group>"; };
+		4DF1A0F14AD6C3AB41B2994A /* letter_g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_g.wav; path = MemoryCardApp/Sounds/letter_g.wav; sourceTree = "<group>"; };
+		4DF1A75112F9B91643805D1C /* letter_f.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_f.wav; path = MemoryCardApp/Sounds/letter_f.wav; sourceTree = "<group>"; };
+		4DF1ABF17F90F356B565BF77 /* animal_cow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_cow.wav; path = MemoryCardApp/Sounds/animal_cow.wav; sourceTree = "<group>"; };
+		4DF1AF609D382AF028FB97CF /* veg_tomato.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_tomato.wav; path = MemoryCardApp/Sounds/veg_tomato.wav; sourceTree = "<group>"; };
+		4DF1B45F94E5B98F23E99C4D /* game_over.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = game_over.wav; path = MemoryCardApp/Sounds/game_over.wav; sourceTree = "<group>"; };
+		4DF1B9A0743393FCA7DB0E68 /* letter_i.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_i.wav; path = MemoryCardApp/Sounds/letter_i.wav; sourceTree = "<group>"; };
+		4DF1BB50F79A0471D2113606 /* animal_pig.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_pig.wav; path = MemoryCardApp/Sounds/animal_pig.wav; sourceTree = "<group>"; };
+		4DF1BC0DF586D2B0CA3990F2 /* fruit_watermelon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_watermelon.wav; path = MemoryCardApp/Sounds/fruit_watermelon.wav; sourceTree = "<group>"; };
+		4DF1C1EACF5407B5D4995DA9 /* number_10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_10.wav; path = MemoryCardApp/Sounds/number_10.wav; sourceTree = "<group>"; };
+		4DF1C7C3D07E7D92B22D2E36 /* fruit_orange.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_orange.wav; path = MemoryCardApp/Sounds/fruit_orange.wav; sourceTree = "<group>"; };
+		4DF1CBBC7C9828528531CBB8 /* animal_lion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_lion.wav; path = MemoryCardApp/Sounds/animal_lion.wav; sourceTree = "<group>"; };
+		4DF1CC8119CF5987FE8DF1C6 /* vehicle_rocket.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_rocket.wav; path = MemoryCardApp/Sounds/vehicle_rocket.wav; sourceTree = "<group>"; };
+		4DF1D115C1F550E359BD7CE9 /* animal_puppy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_puppy.wav; path = MemoryCardApp/Sounds/animal_puppy.wav; sourceTree = "<group>"; };
+		4DF1D2DFEA77C54E4017E490 /* veg_mushroom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = veg_mushroom.wav; path = MemoryCardApp/Sounds/veg_mushroom.wav; sourceTree = "<group>"; };
+		4DF1DE2AF5D02B129CC907D2 /* letter_d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = letter_d.wav; path = MemoryCardApp/Sounds/letter_d.wav; sourceTree = "<group>"; };
+		4DF1DF1FC484AE689A985FEC /* vehicle_motorcycle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = vehicle_motorcycle.wav; path = MemoryCardApp/Sounds/vehicle_motorcycle.wav; sourceTree = "<group>"; };
+		4DF1E18CCBF40EFBF16807F5 /* animal_kitten.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_kitten.wav; path = MemoryCardApp/Sounds/animal_kitten.wav; sourceTree = "<group>"; };
+		4DF1E8B4DAD20473ED78E325 /* number_5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_5.wav; path = MemoryCardApp/Sounds/number_5.wav; sourceTree = "<group>"; };
+		4DF1E916B4345B67FC412BF9 /* fruit_banana.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fruit_banana.wav; path = MemoryCardApp/Sounds/fruit_banana.wav; sourceTree = "<group>"; };
+		4DF1EFFEAF803D71C6738D9D /* animal_frog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = animal_frog.wav; path = MemoryCardApp/Sounds/animal_frog.wav; sourceTree = "<group>"; };
+		4DF1F1D9275E3F121F29DD42 /* number_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = number_2.wav; path = MemoryCardApp/Sounds/number_2.wav; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-MemoryCardApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryCardApp.release.xcconfig"; path = "Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp.release.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-MemoryCardApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MemoryCardApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MemoryCardApp/AppDelegate.swift; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MemoryCardApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-MemoryCardApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* MemoryCardApp */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				761780EC2CA45674006654EE /* AppDelegate.swift */,
+				4D0000010000000000000101 /* card_click.wav */,
+				4D0000010000000000000102 /* failure.wav */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				4D0000010000000000000103 /* kids_background.wav */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				4D0000010000000000000104 /* success.wav */,
+				4DF13D4CD1AF1CCC4DFE2137 /* animal_chick.wav */,
+				4DF1ABF17F90F356B565BF77 /* animal_cow.wav */,
+				4DF199DDCCC51F85804CF308 /* animal_duck.wav */,
+				4DF11D505A05C3995EFC0DC9 /* animal_elephant.wav */,
+				4DF1EFFEAF803D71C6738D9D /* animal_frog.wav */,
+				4DF1E18CCBF40EFBF16807F5 /* animal_kitten.wav */,
+				4DF1CBBC7C9828528531CBB8 /* animal_lion.wav */,
+				4DF136A2FDBDE55CAC1552C5 /* animal_monkey.wav */,
+				4DF1BB50F79A0471D2113606 /* animal_pig.wav */,
+				4DF1D115C1F550E359BD7CE9 /* animal_puppy.wav */,
+				4DF11CCFA55ED928969A46EA /* fruit_apple.wav */,
+				4DF1E916B4345B67FC412BF9 /* fruit_banana.wav */,
+				4DF17964AA4A6D8051673145 /* fruit_cherries.wav */,
+				4DF18DBA0B061BF0D490A54E /* fruit_grapes.wav */,
+				4DF10139701B6853D295C24F /* fruit_mango.wav */,
+				4DF1C7C3D07E7D92B22D2E36 /* fruit_orange.wav */,
+				4DF1332D5933CAE9BA8B9B5F /* fruit_pear.wav */,
+				4DF12D4792A8DD47B967EA22 /* fruit_pineapple.wav */,
+				4DF10F0097C11525A54DD988 /* fruit_strawberry.wav */,
+				4DF1BC0DF586D2B0CA3990F2 /* fruit_watermelon.wav */,
+				4DF1960D07ACD50F407869A6 /* letter_a.wav */,
+				4DF143D1576D751173EE6861 /* letter_b.wav */,
+				4DF19793BD748BA800F4D4B3 /* letter_c.wav */,
+				4DF1DE2AF5D02B129CC907D2 /* letter_d.wav */,
+				4DF130777FA1802A237524A0 /* letter_e.wav */,
+				4DF1A75112F9B91643805D1C /* letter_f.wav */,
+				4DF1A0F14AD6C3AB41B2994A /* letter_g.wav */,
+				4DF1889AFB251E2EC2210412 /* letter_h.wav */,
+				4DF1B9A0743393FCA7DB0E68 /* letter_i.wav */,
+				4DF132B95DE308E13AF3C527 /* letter_j.wav */,
+				4DF10DBFC13B45CDD7D5EEE8 /* number_1.wav */,
+				4DF1C1EACF5407B5D4995DA9 /* number_10.wav */,
+				4DF1F1D9275E3F121F29DD42 /* number_2.wav */,
+				4DF19D51EA6B829E06559A42 /* number_3.wav */,
+				4DF1A08DD887F7ED4815F2CE /* number_4.wav */,
+				4DF1E8B4DAD20473ED78E325 /* number_5.wav */,
+				4DF128C58117CEDCB1F5FCFA /* number_6.wav */,
+				4DF11B8BC41A8EF120E8BFE4 /* number_7.wav */,
+				4DF13CA3EDE3F2C76E0A98CB /* number_8.wav */,
+				4DF122AE2A84882386C5E316 /* number_9.wav */,
+				4DF1776204227A524179E702 /* veg_broccoli.wav */,
+				4DF1480082928B1EC9889111 /* veg_carrot.wav */,
+				4DF16AC0BB33F806C6973FAE /* veg_corn.wav */,
+				4DF13AC89845A701AF1A21DC /* veg_cucumber.wav */,
+				4DF1622C15782CB0842B4611 /* veg_eggplant.wav */,
+				4DF1D2DFEA77C54E4017E490 /* veg_mushroom.wav */,
+				4DF14FE13374CB5D7C61DEDA /* veg_onion.wav */,
+				4DF1702B6FC003F7A0E6F42B /* veg_pepper.wav */,
+				4DF1451A4783F53B2DA27147 /* veg_potato.wav */,
+				4DF1AF609D382AF028FB97CF /* veg_tomato.wav */,
+				4DF12BD08703277859874EC6 /* vehicle_airplane.wav */,
+				4DF152E84444CDBAB6B43BF6 /* vehicle_bicycle.wav */,
+				4DF1661623448706AAAF2CFE /* vehicle_bus.wav */,
+				4DF16C99913BE0651F08789E /* vehicle_car.wav */,
+				4DF1444D590DA0D273D30B6A /* vehicle_helicopter.wav */,
+				4DF1DF1FC484AE689A985FEC /* vehicle_motorcycle.wav */,
+				4DF1CC8119CF5987FE8DF1C6 /* vehicle_rocket.wav */,
+				4DF105F7A53A5A8769342318 /* vehicle_ship.wav */,
+				4DF1521B0D0A4D7CAF8DFF42 /* vehicle_train.wav */,
+				4DF179DDABE536FE260FE227 /* vehicle_truck.wav */,
+				4DF1B45F94E5B98F23E99C4D /* game_over.wav */,
+				4DF10CF2E1C8C6EED66F0810 /* win_fanfare.wav */,
+			);
+			name = MemoryCardApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-MemoryCardApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* MemoryCardApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* MemoryCardApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-MemoryCardApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-MemoryCardApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* MemoryCardApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MemoryCardApp" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryCardApp;
+			productName = MemoryCardApp;
+			productReference = 13B07F961A680F5B00A75B9A /* MemoryCardApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MemoryCardApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* MemoryCardApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				4D0000010000000000000001 /* card_click.wav in Resources */,
+				4D0000010000000000000002 /* failure.wav in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4D0000010000000000000003 /* kids_background.wav in Resources */,
+				D86A9C0BD089AA196F0EF372 /* PrivacyInfo.xcprivacy in Resources */,
+				4D0000010000000000000004 /* success.wav in Resources */,
+				4DB1041FFFB767AB22A0FB68 /* animal_chick.wav in Resources */,
+				4DB1029AEF6A63954A893766 /* animal_cow.wav in Resources */,
+				4DB1B932A7A31AE44D2F61A1 /* animal_duck.wav in Resources */,
+				4DB132CDF9D5003AC10252C9 /* animal_elephant.wav in Resources */,
+				4DB14231EE24391006C2255D /* animal_frog.wav in Resources */,
+				4DB175BD2D4265983ADC2C6E /* animal_kitten.wav in Resources */,
+				4DB1292BEA8C16380D5A74CB /* animal_lion.wav in Resources */,
+				4DB1B2DF393A5E7E37F88B6E /* animal_monkey.wav in Resources */,
+				4DB19D56EE9CDC0E5096C654 /* animal_pig.wav in Resources */,
+				4DB143FC307D3DDDA1E1579F /* animal_puppy.wav in Resources */,
+				4DB162786677FA743ECD5C13 /* fruit_apple.wav in Resources */,
+				4DB11E6B7A8517D4AEBB3872 /* fruit_banana.wav in Resources */,
+				4DB11A1BC9A9925D509983B9 /* fruit_cherries.wav in Resources */,
+				4DB17DD0899FDCFDEB555B02 /* fruit_grapes.wav in Resources */,
+				4DB16FB6AA2C792210565E5E /* fruit_mango.wav in Resources */,
+				4DB19C120A377680F865CD7B /* fruit_orange.wav in Resources */,
+				4DB1368AC6E4326C15FD1B77 /* fruit_pear.wav in Resources */,
+				4DB15FADBED519B280A9A88F /* fruit_pineapple.wav in Resources */,
+				4DB18786527AB186B6F8B627 /* fruit_strawberry.wav in Resources */,
+				4DB1B9167AED452534DBD8D7 /* fruit_watermelon.wav in Resources */,
+				4DB1BFA50C109365FBD546B3 /* letter_a.wav in Resources */,
+				4DB10146F44B8CC37B7107FA /* letter_b.wav in Resources */,
+				4DB1223A517771F290573581 /* letter_c.wav in Resources */,
+				4DB19B2B13873081E8E15B70 /* letter_d.wav in Resources */,
+				4DB1908D962183A6E0A6E0CE /* letter_e.wav in Resources */,
+				4DB17DD9ECAFCAE7445B58BC /* letter_f.wav in Resources */,
+				4DB1AC8C89F7E4816F2509DB /* letter_g.wav in Resources */,
+				4DB14623A5C3BF1C81059DEE /* letter_h.wav in Resources */,
+				4DB1580FCD09A24C31B34F30 /* letter_i.wav in Resources */,
+				4DB193087AEEE02744D510B2 /* letter_j.wav in Resources */,
+				4DB1F1A92A67F047E8DE736C /* number_1.wav in Resources */,
+				4DB1B2BC467031F157797C37 /* number_10.wav in Resources */,
+				4DB1B6CA73F13CF604172C6A /* number_2.wav in Resources */,
+				4DB126527B323E5F7A161DAF /* number_3.wav in Resources */,
+				4DB1EAB11DD733E8F76B3746 /* number_4.wav in Resources */,
+				4DB1886F95BFCF7DE285131A /* number_5.wav in Resources */,
+				4DB17648EB02F523C55D5EA3 /* number_6.wav in Resources */,
+				4DB193372C385AD7D8AEA0B5 /* number_7.wav in Resources */,
+				4DB120811C347A08BB593A83 /* number_8.wav in Resources */,
+				4DB14E5426FA4081333E40D9 /* number_9.wav in Resources */,
+				4DB17EB5FDB5F107F335CAD8 /* veg_broccoli.wav in Resources */,
+				4DB16EE6C48A94C04C37ADF1 /* veg_carrot.wav in Resources */,
+				4DB1BFF8DA2BF71768D6D450 /* veg_corn.wav in Resources */,
+				4DB1764C6240A278716B4369 /* veg_cucumber.wav in Resources */,
+				4DB1BAD07346C75D1E63A7CC /* veg_eggplant.wav in Resources */,
+				4DB1C7E4F28B2AC4E9192202 /* veg_mushroom.wav in Resources */,
+				4DB12389D78EC8B5D07631F6 /* veg_onion.wav in Resources */,
+				4DB117B128C678137D6998E4 /* veg_pepper.wav in Resources */,
+				4DB143BC2370E7D508186C79 /* veg_potato.wav in Resources */,
+				4DB163EE546EAC10B721FDCB /* veg_tomato.wav in Resources */,
+				4DB13AB32E53752BFE37FDAC /* vehicle_airplane.wav in Resources */,
+				4DB17069C7FB8346261BA143 /* vehicle_bicycle.wav in Resources */,
+				4DB1858D5A2C4619B6F9A747 /* vehicle_bus.wav in Resources */,
+				4DB1354619D7069CD5629358 /* vehicle_car.wav in Resources */,
+				4DB19EBEFFF13DE71F2ADBF7 /* vehicle_helicopter.wav in Resources */,
+				4DB18503D0A68AB7A146A296 /* vehicle_motorcycle.wav in Resources */,
+				4DB1EA616C194F80A455790D /* vehicle_rocket.wav in Resources */,
+				4DB1029461AA743A45681639 /* vehicle_ship.wav in Resources */,
+				4DB15912D4C390AB1C081B8F /* vehicle_train.wav in Resources */,
+				4DB1FB2CF80183C12D486E61 /* vehicle_truck.wav in Resources */,
+				4DB10D6418339835DDAB8725 /* game_over.wav in Resources */,
+				4DB16351DC408132E3CB4BB6 /* win_fanfare.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemoryCardApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MemoryCardApp/Pods-MemoryCardApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				761780ED2CA45674006654EE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-MemoryCardApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MemoryCardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MemoryCardApp;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-MemoryCardApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = MemoryCardApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = MemoryCardApp;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MemoryCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MemoryCardApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
