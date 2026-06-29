@@ -63,7 +63,7 @@ index.android.bundle
 *.jsbundle
 
 # CocoaPods
-# **/Pods/
+**/Pods/
 /ios/Podfile.lock
 android/app/release/app.aab
 android/app/release/*
